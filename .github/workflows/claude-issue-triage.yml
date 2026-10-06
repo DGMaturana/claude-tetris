@@ -85,6 +85,8 @@ jobs:
                ## Criterios de aceptación
                ## Preguntas abiertas / información faltante
 
+            Formato: todo lo que escribas en `.triage/diagnosis.md` (que luego se publica como comentario en el issue) debe estar en formato Markdown válido que GitHub (GitHub Flavored Markdown) pueda renderizar: encabezados con `##`, listas con `-` o `1.`, código en bloques con triple acento grave (indicando el lenguaje, p. ej. ```js) o en línea con acentos graves, referencias a código como `archivo:línea` entre acentos graves, y énfasis con `**negrita**`. No uses HTML ni texto plano sin formato.
+
             Reglas: no modifiques código del repositorio, no hagas commits ni push, no comentes directamente en el issue (el comentario lo publica un paso posterior a partir de `.triage/diagnosis.md`).
           claude_args: '--allowedTools "Read,Glob,Grep,Write,Bash(gh issue view:*),Bash(gh issue edit:*),Bash(gh label list:*)"'
 
